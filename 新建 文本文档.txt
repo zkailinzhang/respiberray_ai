@@ -1,0 +1,14 @@
+create table if not device_task_relation(
+  id int auto_increment, 
+  device_id int, 
+  ip varchar(255), 
+  netgate varchar(255) not null, 
+  task int , 
+  timestamp DATE, 
+  primary key(ip)
+);
+
+create table Phone_table(pid INT, name CHAR(20), price INT);
+
+
+create user 'user01' @'localhost' identified by 'user01';
